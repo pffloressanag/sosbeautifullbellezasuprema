@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css?family=Alkatra');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 100px;
+    filter: drop-shadow(0px 7px 21px rgb(179, 31,134));
+    animation: rotar 10s linear infinite;
+}
+
+
+@keyframes rotar {
+    from{
+        transform: rotateY(360deg);
+    }
+    to{
+        transform: rotateY(-360deg);
+    }
+    
+}
+
+.bottom_part{
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    bottom: -94px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11000036;
+    transform: rotateX(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_part::before{
+    content: "";
+    width: 16rem;
+    height: 16rem;
+    position: absolute;
+    bottom: 5rem;
+    background: rgb(126, 5, 90);
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 10px #11111136;
+}
+
+
+#logo1{
+    width: 18%;
+    height: 18%;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    filter: drop-shadow(0px 7px 21px rgb(179, 31,134));
+    animation: rotar 10s linear infinite;
+    
+}
+
+body#inicio {
+    background: linear-gradient(black, rgb(179, 31, 134), pink, black);
+    height: 80%;
+   }
+body#galeria{
+    background-image: url(../img/imagendefondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body#turnos{
+    background-image: url(../img/maquillaje6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+#lg{
+    color: aqua;
+    font-size: 35px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a{
+    color: rgb(213, 248, 13);
+    text-decoration: none;
+}
+
+a:hover{
+    color:aqua;
+}
+
+.separador1{
+    height: 10px ;
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue ;
+    text-align: center;
+}
+
+.alinear{
+    width: 80%;
+    margin:50px auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 30px;
+}
+
+.alinear img{
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.ful-img{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+
+}
+
+.ful-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.ful-img img{
+    width: 90%;
+    max-width: 600px;
+}
+
+
+
+
+.centro1:hover{
+    transform: scale(1.2);
+    transition: all 0.5s linear;
+}
+
+.main img{
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: solid;
+
+}
+
+.main:hover{
+    transform: scale(0.9);
+    transition: all 0.5s linear;
+    
+}
+
+.centro1{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: solid;
+    
+}
+
+
+
+.main{
+    height: 100px;
+}
+
+#formulario{
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+}
+
+#parrafo1{
+    width: 40%;
+    margin-left: 35%;
+    margin-right: auto;
+    display: block;
+    font-family:'Alkatra';
+    font-size: larger;  
+}
+
+#icono_whatsapp{
+    width: 6%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;    
+}
+
+#nav_turnos{
+    margin-top: 50px;
+}
+
+#parrafo1{
+    top: auto;
+}
+
+.form-contacto{
+    background-color: rgb(224, 183, 183);
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 13px 37px rgba(0,0,0,0.9) ;
+
+}
+
+header{
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   overflow: hidden;
+   color: white;
+}
+header span{
+    font-size: 70px;
+    display: block;
+    text-align: center;
+}
+
+.contacto{
+    padding: .8rem;
+    overflow: hidden;
+    color: gray;
+}
+
+.contacto label, .contacto input, .contacto textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contacto label{
+    font-weight: 700;
+}
+
+.contacto input:not([type='submit']), .contacto input:not([type='reset']), .contacto textarea{
+    border: none;
+    border-bottom:2px solid #f010b836 ;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.contacto textarea{
+    min-height: 100%;   
+}
+
+input[type='submit']{
+    padding: 10px;
+    border: none;
+    background-color: aqua;
+    color: antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input[type='reset']{
+    padding: 10px;
+    border: none;
+    background-color: aqua;
+    color: antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.img_redes{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.img_redes1{
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.img_redes2{
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 590px;
+}
+
+.img_redes3{
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+.siguenos1{
+
+    margin-top: 130px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rgb(7, 153, 153);
+}
+
+.siguenos2{
+
+    margin-top: 130px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rgb(7, 153, 153);
+}
+
+.siguenos{
+
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: rgb(7, 153, 153);
+}
+
+.parrafo_sos{
+    font-family: monospace;
+    font-size:xx-large;
+    text-align: center;
+    font-style: oblique;
+    color:deeppink;
+    font-weight: bold;
+}
+
+.main1{
+
+
+        margin-top: 130px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 1000px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: oblique;
+        color: rgb(7, 153, 153);
+    
+}
+
+
+
+
